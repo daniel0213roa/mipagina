@@ -1,0 +1,52 @@
+header {
+
+    /*color de fondo*/
+    background-color: #333;
+    /*color de la letra*/
+    color: #fff;
+    /*alinear contenido en la pagina*/
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    /*modifica el estilo de la lista*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    /*modifica la posicion de cada item*/
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+/*quita el subrayado de las etiquetas a el nav*/
+    text-decoration: none;
+    padding: 5px;
+}
+
+/*cambia de color al pasar el mouse por los enlaces de la barra de navegacion*/
+nav a:hover {
+    color: #1BF7DE;
+}
+
+
+@media (max-width: 767px) {
+    header {
+        /*Esto cambia el color de fondo del encabezado a #333 en pantallas con un ancho máximo*/
+        background-color: #333;
+        /*Esto cambia el tamaño de fuente del texto de navegación a 16 píxeles en pantallas con un ancho máximo de 767 píxeles.*/
+        font-size: 16px;
+    }
+}
+
+/*Esto ajusta el ancho del encabezado a 1200 píxeles en pantallas con un ancho mínimo de 1200 píxeles.*/
+@media (min-width: 1200px) {
+    header {
+    width: 1200px;
+    }
+}
